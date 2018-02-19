@@ -18,8 +18,8 @@ pwd
 cd $BUILD_DIR
 pwd
 
-curl https://github.com/opencv/opencv_extra/raw/master/testdata/dnn/colorization_pts_in_hull.npy > colorization_pts_in_hull.npy
-curl https://raw.githubusercontent.com/richzhang/colorization/master/models/colorization_deploy_v2.prototxt > colorization_deploy_v2.prototxt
-curl http://eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/colorization_release_v2.caffemodel > colorization_release_v2.caffemodel
+wget https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/colorization_pts_in_hull.npy
+wget https://raw.githubusercontent.com/richzhang/colorization/master/models/colorization_deploy_v2.prototxt
+wget http://eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/colorization_release_v2.caffemodel
 
 ls -l
