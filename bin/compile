@@ -18,15 +18,8 @@ pwd
 cd $BUILD_DIR
 pwd
 
-# ant tool required to build java samples
-curl http://apache.mirror.digionline.de/ant/binaries/apache-ant-1.9.9-bin.tar.gz > ant.tgz
-tar zxf ant.tgz
-rm ant.tgz
-echo ant ok.
+curl https://github.com/opencv/opencv_extra/raw/master/testdata/dnn/colorization_pts_in_hull.npy > colorization_pts_in_hull.npy
+curl https://raw.githubusercontent.com/richzhang/colorization/master/models/colorization_deploy_v2.prototxt > colorization_deploy_v2.prototxt
+curl http://eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/colorization_release_v2.caffemodel > colorization_release_v2.caffemodel
 
-## kotlin (does not work with java 1.7 on server!)
-#wget https://github.com/JetBrains/kotlin/releases/download/v1.1.4/kotlin-compiler-1.1.4.zip
-#unzip kotlin-compiler-1.1.4.zip
-#rm *.zip
-
-ls
+ls -l
