@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+set -e
+set -o pipefail
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+function indent() {
+  c='s/^/ /'
+  case $(uname) in
+    Darwin) sed -l "$c";;
+    *) sed -u "$c";;
+  esac
+}
+
+pwd
+cd $BUILD_DIR
+pwd
+
+# precompiled, static opencv 3.3 libs + java. python comes in via requirements.txt (using pip opencv-contrib-python)
+git clone https://github.com/berak/sugarcoatedchili.git
+ls -l sugarcoatedchili
+tar -xf sugarcoatedchili/ocv3.tgz
+rm -rf sugarcoatedchili
+echo ocv ok.
+
+# ant tool required to build java samples
+curl http://apache.mirror.digionline.de/ant/binaries/apache-ant-1.9.9-bin.tar.gz > ant.tgz
+tar zxf ant.tgz
+rm ant.tgz
+echo ant ok.
+
+## kotlin (does not work with java 1.7 on server!)
+#wget https://github.com/JetBrains/kotlin/releases/download/v1.1.4/kotlin-compiler-1.1.4.zip
+#unzip kotlin-compiler-1.1.4.zip
+#rm *.zip
+
+ls
