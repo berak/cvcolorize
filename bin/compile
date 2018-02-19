@@ -23,7 +23,11 @@ pwd
 #wget -nv http://eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/colorization_release_v2.caffemodel
 
 #wget -nv http://cs.stanford.edu/people/jcjohns/fast-neural-style/models/instance_norm/feathers.t7
-wget -nv http://dl.caffe.berkeleyvision.org/fcn8s-heavy-pascal.caffemodel
-wget -nv https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/fcn8s-heavy-pascal.prototxt
+
+#wget -nv http://dl.caffe.berkeleyvision.org/fcn8s-heavy-pascal.caffemodel
+#wget -nv https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/fcn8s-heavy-pascal.prototxt
+
+wget -nv http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel
+wget -nv https://github.com/opencv/opencv_extra/blob/master/testdata/dnn/openpose_pose_coco.prototxt
 
 ls -l
