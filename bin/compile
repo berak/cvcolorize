@@ -27,7 +27,8 @@ pwd
 #wget -nv http://dl.caffe.berkeleyvision.org/fcn8s-heavy-pascal.caffemodel
 #wget -nv https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/fcn8s-heavy-pascal.prototxt
 
-wget -nv http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel
-wget -nv https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/openpose_pose_coco.prototxt
+#wget -nv http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel
+#wget -nv https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/openpose_pose_coco.prototxt
 
+wget -nv https://www.dropbox.com/sh/dywzk3gyb12hpe5/AABoUwqQGWvClUu27Z1EWeu9a/model-best.net?dl=1
 ls -l
