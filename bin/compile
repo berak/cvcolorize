@@ -18,9 +18,9 @@ pwd
 cd $BUILD_DIR
 pwd
 
-#wget -nv https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/colorization_pts_in_hull.npy
-#wget -nv https://raw.githubusercontent.com/richzhang/colorization/master/models/colorization_deploy_v2.prototxt
-#wget -nv http://eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/colorization_release_v2.caffemodel
+wget -nv https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/colorization_pts_in_hull.npy
+wget -nv https://raw.githubusercontent.com/richzhang/colorization/master/models/colorization_deploy_v2.prototxt
+wget -nv http://eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/colorization_release_v2.caffemodel
 
 #wget -nv http://cs.stanford.edu/people/jcjohns/fast-neural-style/models/instance_norm/feathers.t7
 
@@ -30,5 +30,5 @@ pwd
 #wget -nv http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel
 #wget -nv https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/openpose_pose_coco.prototxt
 
-wget -nv https://www.dropbox.com/sh/dywzk3gyb12hpe5/AABoUwqQGWvClUu27Z1EWeu9a/model-best.net?dl=1 -O model-best.net
+#wget -nv https://www.dropbox.com/sh/dywzk3gyb12hpe5/AABoUwqQGWvClUu27Z1EWeu9a/model-best.net?dl=1 -O model-best.net
 ls -l
